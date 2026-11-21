@@ -1,0 +1,65 @@
+PASS first visit follows light OS preference
+PASS no flash of the wrong theme on first light visit
+PASS first visit follows dark OS preference
+PASS no flash of the wrong theme on first dark visit
+PASS toggle from light switches to dark
+PASS dark theme persists across navigation
+PASS dark theme persists across reload
+PASS no flash of the wrong theme after reload into dark
+PASS toggle from dark switches to light
+PASS light theme persists across navigation
+PASS light theme persists across reload
+PASS no flash of the wrong theme after reload into light
+PASS no horizontal overflow home 390px light
+PASS no horizontal overflow tips 390px light
+PASS no horizontal overflow pc 390px light
+PASS no horizontal overflow insights 390px light
+PASS no horizontal overflow about 390px light
+PASS no horizontal overflow home 768px light
+PASS no horizontal overflow tips 768px light
+PASS no horizontal overflow pc 768px light
+PASS no horizontal overflow insights 768px light
+PASS no horizontal overflow about 768px light
+PASS no horizontal overflow home 1440px light
+PASS no horizontal overflow tips 1440px light
+PASS no horizontal overflow pc 1440px light
+PASS no horizontal overflow insights 1440px light
+PASS no horizontal overflow about 1440px light
+PASS no horizontal overflow home 390px dark
+PASS no horizontal overflow tips 390px dark
+PASS no horizontal overflow pc 390px dark
+PASS no horizontal overflow insights 390px dark
+PASS no horizontal overflow about 390px dark
+PASS no horizontal overflow home 768px dark
+PASS no horizontal overflow tips 768px dark
+PASS no horizontal overflow pc 768px dark
+PASS no horizontal overflow insights 768px dark
+PASS no horizontal overflow about 768px dark
+PASS no horizontal overflow home 1440px dark
+PASS no horizontal overflow tips 1440px dark
+PASS no horizontal overflow pc 1440px dark
+PASS no horizontal overflow insights 1440px dark
+PASS no horizontal overflow about 1440px dark
+PASS focus-visible styles on nav, toggle, and feature card
+PASS motion is present and then reduced
+PASS screenshot home-1440-light.png
+PASS screenshot home-390-light.png
+PASS screenshot home-1440-dark.png
+PASS screenshot home-390-dark.png
+PASS screenshot tips-1440-light.png
+PASS screenshot tips-390-light.png
+PASS screenshot tips-1440-dark.png
+PASS screenshot tips-390-dark.png
+PASS screenshot pc-1440-light.png
+PASS screenshot pc-390-light.png
+PASS screenshot pc-1440-dark.png
+PASS screenshot pc-390-dark.png
+PASS screenshot insights-1440-light.png
+PASS screenshot insights-390-light.png
+PASS screenshot insights-1440-dark.png
+PASS screenshot insights-390-dark.png
+PASS screenshot about-1440-light.png
+PASS screenshot about-390-light.png
+PASS screenshot about-1440-dark.png
+PASS screenshot about-390-dark.png
+browser-checks: pass

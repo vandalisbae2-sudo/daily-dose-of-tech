@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          var root = document.documentElement;
+          if (theme === "dark") root.classList.add("dark");
+          else root.classList.remove("dark");
+          root.style.colorScheme = theme;
+          root.style.backgroundColor = theme === "dark" ? "#09090b" : "#fafafa";
+          root.dataset.theme = theme;
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the latest in technology with our curated content on PC parts and essential tricks for computer users. Join us in enhancing your tech knowledge daily." />
+    <title>Tech Insights / Learning Hub | Daily Dose of Tech</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="../src/main.tsx"></script>
+  </body>
+</html>

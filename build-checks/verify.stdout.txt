@@ -1,0 +1,22 @@
+PASS page file index.html
+PASS page file daily-tech-tips/index.html
+PASS page file pc-building/index.html
+PASS page file insights/index.html
+PASS page file about/index.html
+PASS header links on home
+PASS header links on tips
+PASS header links on pc
+PASS header links on insights
+PASS header links on about
+PASS home hero has 3 feature cards
+PASS shipped tips empty
+PASS shipped steps empty
+PASS shipped insights empty
+PASS empty pc page shows the coming note and no step list
+PASS empty insights page shows the coming note and no groups
+PASS fixture steps render as a numbered ordered list
+PASS fixture insights group software then hardware
+PASS built bundle contains the base path and the five routes
+PASS internal links and assets stay under the base path and resolve
+PASS banned template and certification text is absent
+verify-build: pass

@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-highlight: var(--highlight);
+  --color-highlight-foreground: var(--highlight-foreground);
+  --color-logo-badge: var(--logo-badge);
+  --color-link: var(--link);
+  --color-kicker: var(--kicker);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/*
+  Zinc neutrals (Tailwind zinc scale) plus a raspberry, teal, and yellow brand.
+  Hex values are the ones contrast-checked in build-checks/contrast.json.
+*/
+:root {
+  --radius: 0.75rem;
+  --background: #fafafa;
+  --foreground: #18181b;
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --popover: #ffffff;
+  --popover-foreground: #18181b;
+  --primary: #be185d;
+  --primary-foreground: #ffffff;
+  --primary-hover: #9d174d;
+  --secondary: #0f766e;
+  --secondary-foreground: #ffffff;
+  --secondary-hover: #115e59;
+  --muted: #f4f4f5;
+  --muted-foreground: #3f3f46;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+  --border: #71717a;
+  --input: #71717a;
+  --ring: #0f766e;
+  --highlight: #fde047;
+  --highlight-foreground: #18181b;
+  --logo-badge: #ffffff;
+  --link: #9d174d;
+  --kicker: #0f766e;
+}
+
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #18181b;
+  --card-foreground: #fafafa;
+  --popover: #18181b;
+  --popover-foreground: #fafafa;
+  --primary: #f9a8d4;
+  --primary-foreground: #18181b;
+  --primary-hover: #fbcfe8;
+  --secondary: #115e59;
+  --secondary-foreground: #f0fdfa;
+  --secondary-hover: #134e4a;
+  --muted: #27272a;
+  --muted-foreground: #d4d4d8;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #fecaca;
+  --destructive-foreground: #450a0a;
+  --border: #a1a1aa;
+  --input: #a1a1aa;
+  --ring: #5eead4;
+  --highlight: #fde047;
+  --highlight-foreground: #18181b;
+  --logo-badge: #ffffff;
+  --link: #f9a8d4;
+  --kicker: #5eead4;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Segoe UI",
+    "Avenir Next",
+    "Trebuchet MS",
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+}
+
+h1,
+h2,
+.display {
+  font-family:
+    "Arial Black",
+    "Arial Bold",
+    "Segoe UI",
+    Impact,
+    sans-serif;
+  letter-spacing: -0.03em;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[aria-current="page"] {
+  background-color: var(--highlight);
+  color: var(--highlight-foreground);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a[data-slot="button"][data-variant="default"],
+a[data-slot="button"][data-variant="default"]:hover {
+  color: var(--primary-foreground);
+  text-decoration: none;
+}
+
+a[data-slot="button"][data-variant="secondary"],
+a[data-slot="button"][data-variant="secondary"]:hover {
+  color: var(--secondary-foreground);
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 480ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

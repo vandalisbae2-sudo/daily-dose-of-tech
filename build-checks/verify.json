@@ -1,0 +1,112 @@
+{
+  "pass": true,
+  "base": "/daily-dose-of-tech/",
+  "routing": "vite-multi-page",
+  "checks": [
+    {
+      "name": "page file index.html",
+      "pass": true,
+      "detail": "/agent/repos/tmp-3185f49920692193/dist/index.html"
+    },
+    {
+      "name": "page file daily-tech-tips/index.html",
+      "pass": true,
+      "detail": "/agent/repos/tmp-3185f49920692193/dist/daily-tech-tips/index.html"
+    },
+    {
+      "name": "page file pc-building/index.html",
+      "pass": true,
+      "detail": "/agent/repos/tmp-3185f49920692193/dist/pc-building/index.html"
+    },
+    {
+      "name": "page file insights/index.html",
+      "pass": true,
+      "detail": "/agent/repos/tmp-3185f49920692193/dist/insights/index.html"
+    },
+    {
+      "name": "page file about/index.html",
+      "pass": true,
+      "detail": "/agent/repos/tmp-3185f49920692193/dist/about/index.html"
+    },
+    {
+      "name": "header links on home",
+      "pass": true,
+      "detail": "/daily-dose-of-tech/, /daily-dose-of-tech/, /daily-dose-of-tech/daily-tech-tips/, /daily-dose-of-tech/pc-building/, /daily-dose-of-tech/insights/, /daily-dose-of-tech/about/"
+    },
+    {
+      "name": "header links on tips",
+      "pass": true,
+      "detail": "/daily-dose-of-tech/, /daily-dose-of-tech/, /daily-dose-of-tech/daily-tech-tips/, /daily-dose-of-tech/pc-building/, /daily-dose-of-tech/insights/, /daily-dose-of-tech/about/"
+    },
+    {
+      "name": "header links on pc",
+      "pass": true,
+      "detail": "/daily-dose-of-tech/, /daily-dose-of-tech/, /daily-dose-of-tech/daily-tech-tips/, /daily-dose-of-tech/pc-building/, /daily-dose-of-tech/insights/, /daily-dose-of-tech/about/"
+    },
+    {
+      "name": "header links on insights",
+      "pass": true,
+      "detail": "/daily-dose-of-tech/, /daily-dose-of-tech/, /daily-dose-of-tech/daily-tech-tips/, /daily-dose-of-tech/pc-building/, /daily-dose-of-tech/insights/, /daily-dose-of-tech/about/"
+    },
+    {
+      "name": "header links on about",
+      "pass": true,
+      "detail": "/daily-dose-of-tech/, /daily-dose-of-tech/, /daily-dose-of-tech/daily-tech-tips/, /daily-dose-of-tech/pc-building/, /daily-dose-of-tech/insights/, /daily-dose-of-tech/about/"
+    },
+    {
+      "name": "home hero has 3 feature cards",
+      "pass": true,
+      "detail": "tips -> /daily-dose-of-tech/daily-tech-tips/; pc -> /daily-dose-of-tech/pc-building/; insights -> /daily-dose-of-tech/insights/"
+    },
+    {
+      "name": "shipped tips empty",
+      "pass": true,
+      "detail": "length 0"
+    },
+    {
+      "name": "shipped steps empty",
+      "pass": true,
+      "detail": "length 0"
+    },
+    {
+      "name": "shipped insights empty",
+      "pass": true,
+      "detail": "length 0"
+    },
+    {
+      "name": "empty pc page shows the coming note and no step list",
+      "pass": true,
+      "detail": "note only"
+    },
+    {
+      "name": "empty insights page shows the coming note and no groups",
+      "pass": true,
+      "detail": "grouped headings stay hidden until there are insights"
+    },
+    {
+      "name": "fixture steps render as a numbered ordered list",
+      "pass": true,
+      "detail": "<ol class=\"list-decimal space-y-4 ps-6 marker:font-bold marker:text-primary\"><li class=\"ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Alpha</p><p class=\"mt-1 text-base text-muted-foreground\">First fixture body.</p></li><li class=\"ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Beta</p><p class=\"mt-1 text-base text-muted-foreground\">Second fixture body.</p></li><li class=\"ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Gamma</p><p class=\"mt-1 text-ba"
+    },
+    {
+      "name": "fixture insights group software then hardware",
+      "pass": true,
+      "detail": "software 74, softOne 292, softTwo 494, hardware 649, hardOne 867"
+    },
+    {
+      "name": "built bundle contains the base path and the five routes",
+      "pass": true,
+      "detail": "base and routes present"
+    },
+    {
+      "name": "internal links and assets stay under the base path and resolve",
+      "pass": true,
+      "detail": "no off-base refs; 4 assets resolved"
+    },
+    {
+      "name": "banned template and certification text is absent",
+      "pass": true,
+      "detail": "clean"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+
+> daily-dose-of-tech@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 2263 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/pc-building/index.html        1.38 kB │ gzip:  0.66 kB
+dist/insights/index.html           1.43 kB │ gzip:  0.70 kB
+dist/index.html                    1.44 kB │ gzip:  0.69 kB
+dist/about/index.html              1.47 kB │ gzip:  0.71 kB
+dist/daily-tech-tips/index.html    1.50 kB │ gzip:  0.73 kB
+dist/assets/logo-CcA_M6Lb.png     29.72 kB
+dist/assets/main-Dd7R7B6b.css     35.16 kB │ gzip:  6.97 kB
+dist/assets/main-DXwiFWFp.js     306.69 kB │ gzip: 98.12 kB
+
+✓ built in 288ms
