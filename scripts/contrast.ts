@@ -62,6 +62,15 @@ const textPairs: [string, string, string][] = [
   ["kicker on muted", "--kicker", "--muted"],
   ["primary on background", "--primary", "--background"],
   ["primary on card", "--primary", "--card"],
+  ["hero text on extreme a", "--hero-text", "--hero-extreme-a"],
+  ["hero text on extreme b", "--hero-text", "--hero-extreme-b"],
+  ["title gradient a on extreme a", "--title-grad-a", "--hero-extreme-a"],
+  ["title gradient a on extreme b", "--title-grad-a", "--hero-extreme-b"],
+  ["title gradient b on extreme a", "--title-grad-b", "--hero-extreme-a"],
+  ["title gradient b on extreme b", "--title-grad-b", "--hero-extreme-b"],
+  ["pill edge on extreme a", "--pill-edge", "--hero-extreme-a"],
+  ["pill edge on extreme b", "--pill-edge", "--hero-extreme-b"],
+  ["foreground on glass", "--foreground", "--glass-solid"],
   ["destructive-foreground on destructive", "--destructive-foreground", "--destructive"],
 ]
 
@@ -164,7 +173,9 @@ export async function run(): Promise<number> {
   }
   const outDir = path.join(root, "build-checks")
   await mkdir(outDir, { recursive: true })
-  await writeFile(path.join(outDir, "contrast.json"), `${JSON.stringify(report, null, 2)}\n`)
+  const body = `${JSON.stringify(report, null, 2)}\n`
+  await writeFile(path.join(outDir, "contrast.json"), body)
+  await writeFile(path.join(root, "contrast.json"), body)
   console.log(pass ? "contrast: pass" : "contrast: fail")
   for (const pair of pairs.filter((item) => !item.pass)) {
     console.log(`FAIL ${pair.theme} ${pair.name} ${pair.ratio}`)

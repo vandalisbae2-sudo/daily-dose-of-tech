@@ -1,37 +1,38 @@
 import { site } from "@/content/site.ts"
 import { PageHeader } from "@/components/page-header.tsx"
-import { Separator } from "@/components/ui/separator.tsx"
+import { Reveal } from "@/components/reveal.tsx"
+import { ScrollWords } from "@/components/scroll-words.tsx"
 
 export function AboutPage() {
   return (
-    <article className="grid gap-8">
-      <p className="text-sm font-bold tracking-wide text-kicker uppercase">
-        {site.aboutKicker}
-      </p>
+    <article id="content" className="grid gap-10 pb-16">
       <PageHeader title={site.aboutTitle}>
+        <p className="text-sm font-bold tracking-wide uppercase">{site.aboutKicker}</p>
         <p className="text-2xl font-bold">{site.name}</p>
         <p>{site.aboutLead}</p>
       </PageHeader>
-      <div className="grid max-w-3xl gap-6">
-        <Separator />
-        <section className="grid gap-2">
-          <h2 className="w-fit max-w-full rounded-2xl bg-secondary px-3 py-1 text-2xl font-bold text-secondary-foreground">
-            {site.aboutTipsTitle}
-          </h2>
-          <p className="text-lg text-foreground">{site.aboutTipsBody}</p>
-        </section>
-        <section className="grid gap-2">
-          <h2 className="w-fit max-w-full rounded-2xl bg-highlight px-3 py-1 text-2xl font-bold text-highlight-foreground">
-            {site.guidesTitle}
-          </h2>
-          <p className="text-lg font-semibold text-kicker">{site.guidesLine}</p>
-        </section>
-        <section className="grid gap-2">
-          <h2 className="w-fit max-w-full rounded-2xl bg-primary px-3 py-1 text-2xl font-bold text-primary-foreground">
-            {site.pcDreamTitle}
-          </h2>
-          <p className="text-lg text-foreground">{site.pcDreamBody}</p>
-        </section>
+      <div className="mx-auto grid w-full max-w-5xl gap-10 px-4">
+        <Reveal>
+          <section>
+            <h2 className="text-4xl font-bold text-foreground md:text-6xl">{site.aboutTipsTitle}</h2>
+            <ScrollWords text={site.aboutTipsBody} className="mt-4 text-2xl text-foreground" />
+          </section>
+        </Reveal>
+        <Reveal>
+          <section>
+            <h2 className="text-4xl font-bold text-foreground md:text-6xl">{site.guidesTitle}</h2>
+            <ScrollWords text={site.guidesLine} className="mt-4 text-2xl text-foreground" />
+            <p aria-hidden="true" className="echo-line mt-6 text-4xl font-bold text-transparent md:text-7xl">
+              {site.guidesLine}
+            </p>
+          </section>
+        </Reveal>
+        <Reveal>
+          <section>
+            <h2 className="text-4xl font-bold text-foreground md:text-6xl">{site.pcDreamTitle}</h2>
+            <ScrollWords text={site.pcDreamBody} className="mt-4 text-2xl text-foreground" />
+          </section>
+        </Reveal>
       </div>
     </article>
   )

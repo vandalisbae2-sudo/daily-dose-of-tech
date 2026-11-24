@@ -6,27 +6,27 @@
     {
       "name": "page file index.html",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/dist/index.html"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/dist/index.html"
     },
     {
       "name": "page file daily-tech-tips/index.html",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/dist/daily-tech-tips/index.html"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/dist/daily-tech-tips/index.html"
     },
     {
       "name": "page file pc-building/index.html",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/dist/pc-building/index.html"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/dist/pc-building/index.html"
     },
     {
       "name": "page file insights/index.html",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/dist/insights/index.html"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/dist/insights/index.html"
     },
     {
       "name": "page file about/index.html",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/dist/about/index.html"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/dist/about/index.html"
     },
     {
       "name": "header links on home",
@@ -86,12 +86,12 @@
     {
       "name": "fixture steps render as a numbered ordered list",
       "pass": true,
-      "detail": "<ol class=\"list-decimal space-y-4 ps-6 marker:font-bold marker:text-primary\"><li class=\"ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Alpha</p><p class=\"mt-1 text-base text-muted-foreground\">First fixture body.</p></li><li class=\"ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Beta</p><p class=\"mt-1 text-base text-muted-foreground\">Second fixture body.</p></li><li class=\"ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Gamma</p><p class=\"mt-1 text-ba"
+      "detail": "<div class=\"relative\" data-build-steps=\"plain\"><ol class=\"list-decimal space-y-4 ps-6 marker:font-bold marker:text-primary\"><li id=\"step-0\" class=\"scroll-mt-28 ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Alpha</p><p class=\"mt-1 text-base text-muted-foreground\">First fixture body.</p></li><li id=\"step-1\" class=\"scroll-mt-28 ps-2\"><p class=\"text-lg font-semibold text-foreground\">Fixture Beta</p><p class=\"mt-1 text-base text-muted-foreground\">Second fixture body.</p></li><li id=\""
     },
     {
       "name": "fixture insights group software then hardware",
       "pass": true,
-      "detail": "software 74, softOne 292, softTwo 494, hardware 649, hardOne 867"
+      "detail": "software 74, softOne 343, softTwo 596, hardware 751, hardOne 1020"
     },
     {
       "name": "built bundle contains the base path and the five routes",

@@ -5,10 +5,17 @@ const groups: readonly { id: InsightGroup; label: string }[] = [
   { id: "hardware", label: "Hardware" },
 ]
 
-export function InsightGroups({ insights }: { insights: readonly Insight[] }) {
+export function InsightGroups({
+  insights,
+  activeGroup,
+}: {
+  insights: readonly Insight[]
+  activeGroup?: InsightGroup
+}) {
   return (
     <div className="grid gap-10">
       {groups.map((group) => {
+        if (activeGroup && group.id !== activeGroup) return null
         const items = insights.filter((item) => item.group === group.id)
         if (items.length === 0) return null
         return (
@@ -23,7 +30,8 @@ export function InsightGroups({ insights }: { insights: readonly Insight[] }) {
               {items.map((item, index) => (
                 <li
                   key={`${index}-${item.title}`}
-                  className="rounded-xl border border-border bg-card p-4 text-card-foreground"
+                  id={`insight-${insights.indexOf(item)}`}
+                  className="insight-card lift-card scroll-mt-28 rounded-xl border border-border bg-card p-4 text-card-foreground"
                 >
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="mt-1 text-base text-muted-foreground">

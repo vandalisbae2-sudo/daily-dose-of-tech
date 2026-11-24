@@ -168,6 +168,87 @@
     },
     {
       "theme": "light",
+      "name": "hero text on extreme a",
+      "foreground": "#ffffff",
+      "background": "#9d174d",
+      "ratio": 7.88,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "hero text on extreme b",
+      "foreground": "#ffffff",
+      "background": "#0f766e",
+      "ratio": 5.47,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "title gradient a on extreme a",
+      "foreground": "#ffffff",
+      "background": "#9d174d",
+      "ratio": 7.88,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "title gradient a on extreme b",
+      "foreground": "#ffffff",
+      "background": "#0f766e",
+      "ratio": 5.47,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "title gradient b on extreme a",
+      "foreground": "#fef9c3",
+      "background": "#9d174d",
+      "ratio": 7.34,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "title gradient b on extreme b",
+      "foreground": "#fef9c3",
+      "background": "#0f766e",
+      "ratio": 5.1,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "pill edge on extreme a",
+      "foreground": "#ffffff",
+      "background": "#9d174d",
+      "ratio": 7.88,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "pill edge on extreme b",
+      "foreground": "#ffffff",
+      "background": "#0f766e",
+      "ratio": 5.47,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "foreground on glass",
+      "foreground": "#18181b",
+      "background": "#ffffff",
+      "ratio": 17.72,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
       "name": "destructive-foreground on destructive",
       "foreground": "#ffffff",
       "background": "#b91c1c",
@@ -215,8 +296,8 @@
       "theme": "dark",
       "name": "foreground on background",
       "foreground": "#fafafa",
-      "background": "#09090b",
-      "ratio": 19.06,
+      "background": "#07060b",
+      "ratio": 19.35,
       "minimum": 4.5,
       "pass": true
     },
@@ -233,8 +314,8 @@
       "theme": "dark",
       "name": "muted-foreground on background",
       "foreground": "#d4d4d8",
-      "background": "#09090b",
-      "ratio": 13.46,
+      "background": "#07060b",
+      "ratio": 13.66,
       "minimum": 4.5,
       "pass": true
     },
@@ -314,8 +395,8 @@
       "theme": "dark",
       "name": "link on background",
       "foreground": "#f9a8d4",
-      "background": "#09090b",
-      "ratio": 10.97,
+      "background": "#07060b",
+      "ratio": 11.14,
       "minimum": 4.5,
       "pass": true
     },
@@ -332,8 +413,8 @@
       "theme": "dark",
       "name": "kicker on background",
       "foreground": "#5eead4",
-      "background": "#09090b",
-      "ratio": 13.45,
+      "background": "#07060b",
+      "ratio": 13.65,
       "minimum": 4.5,
       "pass": true
     },
@@ -359,8 +440,8 @@
       "theme": "dark",
       "name": "primary on background",
       "foreground": "#f9a8d4",
-      "background": "#09090b",
-      "ratio": 10.97,
+      "background": "#07060b",
+      "ratio": 11.14,
       "minimum": 4.5,
       "pass": true
     },
@@ -370,6 +451,87 @@
       "foreground": "#f9a8d4",
       "background": "#18181b",
       "ratio": 9.77,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "hero text on extreme a",
+      "foreground": "#fafafa",
+      "background": "#07060b",
+      "ratio": 19.35,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "hero text on extreme b",
+      "foreground": "#fafafa",
+      "background": "#8c5f7a",
+      "ratio": 4.99,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "title gradient a on extreme a",
+      "foreground": "#fafafa",
+      "background": "#07060b",
+      "ratio": 19.35,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "title gradient a on extreme b",
+      "foreground": "#fafafa",
+      "background": "#8c5f7a",
+      "ratio": 4.99,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "title gradient b on extreme a",
+      "foreground": "#fef9c3",
+      "background": "#07060b",
+      "ratio": 18.8,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "title gradient b on extreme b",
+      "foreground": "#fef9c3",
+      "background": "#8c5f7a",
+      "ratio": 4.85,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "pill edge on extreme a",
+      "foreground": "#fafafa",
+      "background": "#07060b",
+      "ratio": 19.35,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "pill edge on extreme b",
+      "foreground": "#fafafa",
+      "background": "#8c5f7a",
+      "ratio": 4.99,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "foreground on glass",
+      "foreground": "#fafafa",
+      "background": "#1a1922",
+      "ratio": 16.68,
       "minimum": 4.5,
       "pass": true
     },
@@ -386,8 +548,8 @@
       "theme": "dark",
       "name": "ring on background",
       "foreground": "#5eead4",
-      "background": "#09090b",
-      "ratio": 13.45,
+      "background": "#07060b",
+      "ratio": 13.65,
       "minimum": 3,
       "pass": true
     },
@@ -395,8 +557,8 @@
       "theme": "dark",
       "name": "border on background",
       "foreground": "#a1a1aa",
-      "background": "#09090b",
-      "ratio": 7.76,
+      "background": "#07060b",
+      "ratio": 7.88,
       "minimum": 3,
       "pass": true
     },

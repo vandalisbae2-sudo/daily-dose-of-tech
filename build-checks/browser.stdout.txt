@@ -1,65 +1,85 @@
-PASS first visit follows light OS preference
-PASS no flash of the wrong theme on first light visit
-PASS first visit follows dark OS preference
-PASS no flash of the wrong theme on first dark visit
-PASS toggle from light switches to dark
-PASS dark theme persists across navigation
-PASS dark theme persists across reload
-PASS no flash of the wrong theme after reload into dark
-PASS toggle from dark switches to light
-PASS light theme persists across navigation
-PASS light theme persists across reload
-PASS no flash of the wrong theme after reload into light
-PASS no horizontal overflow home 390px light
-PASS no horizontal overflow tips 390px light
-PASS no horizontal overflow pc 390px light
-PASS no horizontal overflow insights 390px light
-PASS no horizontal overflow about 390px light
-PASS no horizontal overflow home 768px light
-PASS no horizontal overflow tips 768px light
-PASS no horizontal overflow pc 768px light
-PASS no horizontal overflow insights 768px light
-PASS no horizontal overflow about 768px light
-PASS no horizontal overflow home 1440px light
-PASS no horizontal overflow tips 1440px light
-PASS no horizontal overflow pc 1440px light
-PASS no horizontal overflow insights 1440px light
-PASS no horizontal overflow about 1440px light
-PASS no horizontal overflow home 390px dark
-PASS no horizontal overflow tips 390px dark
-PASS no horizontal overflow pc 390px dark
-PASS no horizontal overflow insights 390px dark
-PASS no horizontal overflow about 390px dark
-PASS no horizontal overflow home 768px dark
-PASS no horizontal overflow tips 768px dark
-PASS no horizontal overflow pc 768px dark
-PASS no horizontal overflow insights 768px dark
-PASS no horizontal overflow about 768px dark
-PASS no horizontal overflow home 1440px dark
-PASS no horizontal overflow tips 1440px dark
-PASS no horizontal overflow pc 1440px dark
-PASS no horizontal overflow insights 1440px dark
-PASS no horizontal overflow about 1440px dark
-PASS focus-visible styles on nav, toggle, and feature card
-PASS motion is present and then reduced
+PASS one h1 on home
+PASS one h1 on tips
+PASS one h1 on pc
+PASS one h1 on insights
+PASS one h1 on about
+PASS empty state on tips
+PASS empty state on pc
+PASS empty state on insights
+PASS home features are present
+PASS first visit follows light
+PASS no flash on first light visit
+PASS first visit follows dark
+PASS no flash on first dark visit
+PASS theme persists across navigation and reload
+PASS palette keyboard opens, traps, and closes
+PASS reduced motion stops autoplay and features still work
+PASS no overflow home 390 light
+PASS no overflow tips 390 light
+PASS no overflow pc 390 light
+PASS no overflow insights 390 light
+PASS no overflow about 390 light
+PASS no overflow home 768 light
+PASS no overflow tips 768 light
+PASS no overflow pc 768 light
+PASS no overflow insights 768 light
+PASS no overflow about 768 light
+PASS no overflow home 1440 light
+PASS no overflow tips 1440 light
+PASS no overflow pc 1440 light
+PASS no overflow insights 1440 light
+PASS no overflow about 1440 light
+PASS no overflow home 390 dark
+PASS no overflow tips 390 dark
+PASS no overflow pc 390 dark
+PASS no overflow insights 390 dark
+PASS no overflow about 390 dark
+PASS no overflow home 768 dark
+PASS no overflow tips 768 dark
+PASS no overflow pc 768 dark
+PASS no overflow insights 768 dark
+PASS no overflow about 768 dark
+PASS no overflow home 1440 dark
+PASS no overflow tips 1440 dark
+PASS no overflow pc 1440 dark
+PASS no overflow insights 1440 dark
+PASS no overflow about 1440 dark
 PASS screenshot home-1440-light.png
-PASS screenshot home-390-light.png
-PASS screenshot home-1440-dark.png
-PASS screenshot home-390-dark.png
 PASS screenshot tips-1440-light.png
-PASS screenshot tips-390-light.png
-PASS screenshot tips-1440-dark.png
-PASS screenshot tips-390-dark.png
 PASS screenshot pc-1440-light.png
-PASS screenshot pc-390-light.png
-PASS screenshot pc-1440-dark.png
-PASS screenshot pc-390-dark.png
 PASS screenshot insights-1440-light.png
-PASS screenshot insights-390-light.png
-PASS screenshot insights-1440-dark.png
-PASS screenshot insights-390-dark.png
 PASS screenshot about-1440-light.png
+PASS screenshot home-768-light.png
+PASS screenshot tips-768-light.png
+PASS screenshot pc-768-light.png
+PASS screenshot insights-768-light.png
+PASS screenshot about-768-light.png
+PASS screenshot home-390-light.png
+PASS screenshot tips-390-light.png
+PASS screenshot pc-390-light.png
+PASS screenshot insights-390-light.png
 PASS screenshot about-390-light.png
+PASS screenshot home-1440-dark.png
+PASS screenshot tips-1440-dark.png
+PASS screenshot pc-1440-dark.png
+PASS screenshot insights-1440-dark.png
 PASS screenshot about-1440-dark.png
+PASS screenshot home-768-dark.png
+PASS screenshot tips-768-dark.png
+PASS screenshot pc-768-dark.png
+PASS screenshot insights-768-dark.png
+PASS screenshot about-768-dark.png
+PASS screenshot home-390-dark.png
+PASS screenshot tips-390-dark.png
+PASS screenshot pc-390-dark.png
+PASS screenshot insights-390-dark.png
 PASS screenshot about-390-dark.png
+PASS side by side light
+PASS side by side dark
+PASS tip entry shows in list, filter, and search
+PASS tip entry shows in the palette
+PASS step entry shows in the tracker and persists
+PASS step entry shows in the palette
+PASS blocked storage still lets the tracker work
+PASS insight entry shows in the switch and palette
 browser-checks: pass

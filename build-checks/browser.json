@@ -1,744 +1,2451 @@
 {
   "pass": true,
-  "origin": "http://127.0.0.1:43219/daily-dose-of-tech/",
   "checks": [
     {
-      "name": "first visit follows light OS preference",
+      "name": "one h1 on home",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "one h1 on tips",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "one h1 on pc",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "one h1 on insights",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "one h1 on about",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "empty state on tips",
+      "pass": true,
+      "detail": "Content is coming."
+    },
+    {
+      "name": "empty state on pc",
+      "pass": true,
+      "detail": "Content is coming."
+    },
+    {
+      "name": "empty state on insights",
+      "pass": true,
+      "detail": "SoftwareHardwareContent is coming."
+    },
+    {
+      "name": "home features are present",
       "pass": true,
       "detail": {
-        "darkClass": false,
-        "dataTheme": "light",
-        "stored": null,
-        "htmlBackground": "rgb(250, 250, 250)",
-        "bodyBackground": "rgb(250, 250, 250)",
-        "colorScheme": "light"
+        "sticky": true,
+        "indicator": true,
+        "transition": true,
+        "reveal": true,
+        "progress": true,
+        "backdrop": true,
+        "tagline": true,
+        "tilt": 3,
+        "learn": true,
+        "logo": true,
+        "heroLogo": false,
+        "search": true
       }
     },
     {
-      "name": "no flash of the wrong theme on first light visit",
+      "name": "hero fills 1440 viewport and headline is at least 180px",
       "pass": true,
       "detail": {
-        "fcp": 80,
-        "samples": [
-          {
-            "phase": "start",
-            "t": 15.699999999953434,
-            "dark": false,
-            "theme": "light",
-            "bg": "rgb(250, 250, 250)"
-          },
-          {
-            "phase": "raf",
-            "t": 19.899999999906868,
-            "dark": false,
-            "theme": "light",
-            "bg": "rgb(250, 250, 250)"
-          }
-        ],
-        "judgedCount": 2,
-        "wrongAfterPaint": false,
-        "finalDark": false,
-        "finalTheme": "light"
+        "width": 1440,
+        "height": 900,
+        "radius": "0px",
+        "fontSize": 194.4,
+        "viewport": 1440
       }
     },
     {
-      "name": "first visit follows dark OS preference",
+      "name": "approved home upgrades present and 15/18 absent",
       "pass": true,
       "detail": {
-        "darkClass": true,
-        "dataTheme": "dark",
-        "stored": null,
-        "htmlBackground": "rgb(9, 9, 11)",
-        "bodyBackground": "rgb(9, 9, 11)",
-        "colorScheme": "dark"
+        "marquee": true,
+        "story": true,
+        "bento": true,
+        "finale": true,
+        "glass": true,
+        "pause": 4,
+        "webgl": false,
+        "scrollBuild": false
       }
     },
     {
-      "name": "no flash of the wrong theme on first dark visit",
+      "name": "hero fills 390 viewport",
       "pass": true,
       "detail": {
-        "fcp": 80,
-        "samples": [
-          {
-            "phase": "start",
-            "t": 15.399999999906868,
-            "dark": true,
-            "theme": "dark",
-            "bg": "rgb(9, 9, 11)"
-          },
-          {
-            "phase": "raf",
-            "t": 20.699999999953434,
-            "dark": true,
-            "theme": "dark",
-            "bg": "rgb(9, 9, 11)"
-          }
-        ],
-        "judgedCount": 2,
-        "wrongAfterPaint": false,
-        "finalDark": true,
-        "finalTheme": "dark"
+        "width": 390,
+        "height": 844
       }
     },
     {
-      "name": "toggle from light switches to dark",
+      "name": "narrow viewport stacks chapters and skips smooth scroll",
       "pass": true,
       "detail": {
-        "darkClass": true,
-        "dataTheme": "dark",
-        "stored": "dark",
-        "htmlBackground": "rgb(9, 9, 11)",
-        "bodyBackground": "rgb(9, 9, 11)",
-        "colorScheme": "dark"
+        "stacked": "true",
+        "smooth": ""
       }
     },
     {
-      "name": "dark theme persists across navigation",
-      "pass": true,
-      "detail": {
-        "darkClass": true,
-        "dataTheme": "dark",
-        "stored": "dark",
-        "htmlBackground": "rgb(9, 9, 11)",
-        "bodyBackground": "rgb(9, 9, 11)",
-        "colorScheme": "dark"
-      }
-    },
-    {
-      "name": "dark theme persists across reload",
-      "pass": true,
-      "detail": {
-        "darkClass": true,
-        "dataTheme": "dark",
-        "stored": "dark",
-        "htmlBackground": "rgb(9, 9, 11)",
-        "bodyBackground": "rgb(9, 9, 11)",
-        "colorScheme": "dark"
-      }
-    },
-    {
-      "name": "no flash of the wrong theme after reload into dark",
-      "pass": true,
-      "detail": {
-        "fcp": 36,
-        "samples": [
-          {
-            "phase": "start",
-            "t": 13.5,
-            "dark": true,
-            "theme": "dark",
-            "bg": "rgb(9, 9, 11)"
-          },
-          {
-            "phase": "raf",
-            "t": 28.100000000093132,
-            "dark": true,
-            "theme": "dark",
-            "bg": "rgb(9, 9, 11)"
-          }
-        ],
-        "judgedCount": 2,
-        "wrongAfterPaint": false,
-        "finalDark": true,
-        "finalTheme": "dark"
-      }
-    },
-    {
-      "name": "toggle from dark switches to light",
-      "pass": true,
-      "detail": {
-        "darkClass": false,
-        "dataTheme": "light",
-        "stored": "light",
-        "htmlBackground": "rgb(250, 250, 250)",
-        "bodyBackground": "rgb(250, 250, 250)",
-        "colorScheme": "light"
-      }
-    },
-    {
-      "name": "light theme persists across navigation",
-      "pass": true,
-      "detail": {
-        "darkClass": false,
-        "dataTheme": "light",
-        "stored": "light",
-        "htmlBackground": "rgb(250, 250, 250)",
-        "bodyBackground": "rgb(250, 250, 250)",
-        "colorScheme": "light"
-      }
-    },
-    {
-      "name": "light theme persists across reload",
-      "pass": true,
-      "detail": {
-        "darkClass": false,
-        "dataTheme": "light",
-        "stored": "light",
-        "htmlBackground": "rgb(250, 250, 250)",
-        "bodyBackground": "rgb(250, 250, 250)",
-        "colorScheme": "light"
-      }
-    },
-    {
-      "name": "no flash of the wrong theme after reload into light",
-      "pass": true,
-      "detail": {
-        "fcp": 32,
-        "samples": [
-          {
-            "phase": "start",
-            "t": 14.199999999953434,
-            "dark": false,
-            "theme": "light",
-            "bg": "rgb(250, 250, 250)"
-          },
-          {
-            "phase": "raf",
-            "t": 18.799999999813735,
-            "dark": false,
-            "theme": "light",
-            "bg": "rgb(250, 250, 250)"
-          }
-        ],
-        "judgedCount": 2,
-        "wrongAfterPaint": false,
-        "finalDark": false,
-        "finalTheme": "light"
-      }
-    },
-    {
-      "name": "no horizontal overflow home 390px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow tips 390px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow pc 390px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow insights 390px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow about 390px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow home 768px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow tips 768px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow pc 768px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow insights 768px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow about 768px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow home 1440px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow tips 1440px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow pc 1440px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow insights 1440px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow about 1440px light",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow home 390px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow tips 390px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow pc 390px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow insights 390px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow about 390px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 390,
-        "scrollWidth": 390,
-        "bodyScrollWidth": 390
-      }
-    },
-    {
-      "name": "no horizontal overflow home 768px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow tips 768px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow pc 768px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow insights 768px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow about 768px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 768,
-        "scrollWidth": 768,
-        "bodyScrollWidth": 768
-      }
-    },
-    {
-      "name": "no horizontal overflow home 1440px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow tips 1440px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow pc 1440px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow insights 1440px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "no horizontal overflow about 1440px dark",
-      "pass": true,
-      "detail": {
-        "clientWidth": 1440,
-        "scrollWidth": 1440,
-        "bodyScrollWidth": 1440
-      }
-    },
-    {
-      "name": "focus-visible styles on nav, toggle, and feature card",
+      "name": "headline words stay intact at 1440",
       "pass": true,
       "detail": [
         {
-          "tag": "A",
-          "text": "Skip to content",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
+          "text": "Empower",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "A",
-          "text": "Daily Dose of Tech\nYour Tech Learning Hub",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
+          "text": "Your",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "A",
-          "text": "Home",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          "text": "Tech",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "A",
-          "text": "Daily Tech Tips",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          "text": "Journey",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "A",
-          "text": "PC Building",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          "text": "Daily",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "A",
-          "text": "Tech Insights / Learning Hub",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          "text": "Dose",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "A",
-          "text": "About",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          "text": "of",
+          "spread": 0,
+          "same": true
         },
         {
-          "tag": "BUTTON",
-          "text": "",
-          "label": "Switch to dark theme",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
-        },
-        {
-          "tag": "A",
-          "text": "Daily Tech Tips",
-          "label": "",
-          "feature": true,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
-        },
-        {
-          "tag": "A",
-          "text": "PC Building",
-          "label": "",
-          "feature": true,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
-        },
-        {
-          "tag": "A",
-          "text": "Tech Insights / Learning Hub",
-          "label": "",
-          "feature": true,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
-        },
-        {
-          "tag": "A",
-          "text": "Home",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
-        },
-        {
-          "tag": "A",
-          "text": "Daily Tech Tips",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
-        },
-        {
-          "tag": "A",
-          "text": "PC Building",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
-        },
-        {
-          "tag": "A",
-          "text": "Tech Insights / Learning Hub",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
-        },
-        {
-          "tag": "A",
-          "text": "About",
-          "label": "",
-          "feature": false,
-          "outlineStyle": "solid",
-          "outlineWidth": "3px",
-          "boxShadow": "none"
+          "text": "Tech",
+          "spread": 0,
+          "same": true
         }
       ]
     },
     {
-      "name": "motion is present and then reduced",
+      "name": "chapters fill the viewport at 1440",
       "pass": true,
       "detail": {
-        "fullMotion": {
-          "hero": "0.48s",
-          "card": "0.2s"
+        "width": 1440,
+        "height": 900,
+        "size": 256,
+        "stacked": "false"
+      }
+    },
+    {
+      "name": "headline words stay intact at 768",
+      "pass": true,
+      "detail": [
+        {
+          "text": "Empower",
+          "spread": 0,
+          "same": true
         },
-        "reduced": {
-          "hero": "1e-05s",
-          "card": "1e-05s"
+        {
+          "text": "Your",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Tech",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Journey",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Daily",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Dose",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "of",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Tech",
+          "spread": 0,
+          "same": true
+        }
+      ]
+    },
+    {
+      "name": "chapters fill the viewport at 768",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "height": 900,
+        "size": 138.24,
+        "stacked": "false"
+      }
+    },
+    {
+      "name": "headline words stay intact at 390",
+      "pass": true,
+      "detail": [
+        {
+          "text": "Empower",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Your",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Tech",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Journey",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Daily",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Dose",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "of",
+          "spread": 0,
+          "same": true
+        },
+        {
+          "text": "Tech",
+          "spread": 0,
+          "same": true
+        }
+      ]
+    },
+    {
+      "name": "tab skips inactive chapters at 1440",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "chapter rail focus ring is visible",
+      "pass": true,
+      "detail": {
+        "width": "3px",
+        "style": "solid"
+      }
+    },
+    {
+      "name": "skip to content still works",
+      "pass": true,
+      "detail": "#content"
+    },
+    {
+      "name": "stacked chapters at 390 are focusable",
+      "pass": true,
+      "detail": [
+        {
+          "inert": false,
+          "links": 1,
+          "active": "true"
+        },
+        {
+          "inert": false,
+          "links": 1,
+          "active": "true"
+        },
+        {
+          "inert": false,
+          "links": 1,
+          "active": "true"
+        }
+      ]
+    },
+    {
+      "name": "pause controls work by keyboard and pointer",
+      "pass": true,
+      "detail": [
+        {
+          "method": "keyboard",
+          "name": "tagline",
+          "label": "Pause tagline",
+          "value": "true"
+        },
+        {
+          "method": "keyboard",
+          "name": "marquee",
+          "label": "Pause marquee",
+          "value": "true"
+        },
+        {
+          "method": "keyboard",
+          "name": "backdrop",
+          "label": "Pause background",
+          "value": "false"
+        },
+        {
+          "method": "pointer",
+          "name": "tagline",
+          "label": "Pause tagline",
+          "value": "true"
+        },
+        {
+          "method": "pointer",
+          "name": "marquee",
+          "label": "Pause marquee",
+          "value": "true"
+        },
+        {
+          "method": "pointer",
+          "name": "backdrop",
+          "label": "Pause background",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "reviewer fixes are present",
+      "pass": true,
+      "detail": {
+        "pillBorder": 2,
+        "pillEdge": "rgb(255, 255, 255)",
+        "transition": true,
+        "lift": 5,
+        "skip": "Skip to content",
+        "contentAfterStory": true,
+        "magnetic": 8
+      }
+    },
+    {
+      "name": "first visit follows light",
+      "pass": true,
+      "detail": {
+        "darkClass": false,
+        "dataTheme": "light",
+        "stored": null,
+        "htmlBackground": "rgb(250, 250, 250)"
+      }
+    },
+    {
+      "name": "no flash on first light visit",
+      "pass": true,
+      "detail": {
+        "wrong": false,
+        "samples": [
+          {
+            "phase": "start",
+            "t": 14,
+            "dark": false,
+            "theme": "light"
+          },
+          {
+            "phase": "raf",
+            "t": 17.400000002235174,
+            "dark": false,
+            "theme": "light"
+          }
+        ]
+      }
+    },
+    {
+      "name": "first visit follows dark",
+      "pass": true,
+      "detail": {
+        "darkClass": true,
+        "dataTheme": "dark",
+        "stored": null,
+        "htmlBackground": "rgb(7, 6, 11)"
+      }
+    },
+    {
+      "name": "no flash on first dark visit",
+      "pass": true,
+      "detail": {
+        "wrong": false,
+        "samples": [
+          {
+            "phase": "start",
+            "t": 15.599999997764826,
+            "dark": true,
+            "theme": "dark"
+          },
+          {
+            "phase": "raf",
+            "t": 26.399999998509884,
+            "dark": true,
+            "theme": "dark"
+          }
+        ]
+      }
+    },
+    {
+      "name": "theme persists across navigation and reload",
+      "pass": true,
+      "detail": {
+        "afterNav": {
+          "darkClass": true,
+          "dataTheme": "dark",
+          "stored": "dark",
+          "htmlBackground": "rgb(7, 6, 11)"
+        },
+        "afterReload": {
+          "darkClass": true,
+          "dataTheme": "dark",
+          "stored": "dark",
+          "htmlBackground": "rgb(7, 6, 11)"
+        }
+      }
+    },
+    {
+      "name": "palette keyboard opens, traps, and closes",
+      "pass": true,
+      "detail": {
+        "dialogLabel": "radix-_r_9_",
+        "focusBack": true,
+        "focusedInDialog": true
+      }
+    },
+    {
+      "name": "reduced motion stops autoplay and features still work",
+      "pass": true,
+      "detail": {
+        "firstLine": "Your Tech Learning Hub",
+        "secondLine": "Your Tech Learning Hub",
+        "playing": "false",
+        "stacked": "true",
+        "motionState": {
+          "smooth": "",
+          "marqueePaused": "true",
+          "marqueeAnimation": "none",
+          "letters": 0,
+          "finaleHidden": false,
+          "chapters": 3,
+          "chapterFocus": [
+            {
+              "inert": false,
+              "links": 1,
+              "active": "true"
+            },
+            {
+              "inert": false,
+              "links": 1,
+              "active": "true"
+            },
+            {
+              "inert": false,
+              "links": 1,
+              "active": "true"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "upgrade scene on tips",
+      "pass": true,
+      "detail": {
+        "immersive": true,
+        "empty": "tips",
+        "svgText": 0,
+        "canvas": 0,
+        "echo": false,
+        "logos": 1,
+        "headerLogo": 1
+      }
+    },
+    {
+      "name": "upgrade scene on pc",
+      "pass": true,
+      "detail": {
+        "immersive": true,
+        "empty": "pc",
+        "svgText": 0,
+        "canvas": 0,
+        "echo": false,
+        "logos": 1,
+        "headerLogo": 1
+      }
+    },
+    {
+      "name": "upgrade scene on insights",
+      "pass": true,
+      "detail": {
+        "immersive": true,
+        "empty": "insights",
+        "svgText": 0,
+        "canvas": 0,
+        "echo": false,
+        "logos": 1,
+        "headerLogo": 1
+      }
+    },
+    {
+      "name": "upgrade scene on about",
+      "pass": true,
+      "detail": {
+        "immersive": true,
+        "empty": "",
+        "svgText": 0,
+        "canvas": 0,
+        "echo": true,
+        "logos": 1,
+        "headerLogo": 1
+      }
+    },
+    {
+      "name": "view transitions fall back without the API",
+      "pass": true,
+      "detail": {
+        "title": "About",
+        "transition": true,
+        "api": false
+      }
+    },
+    {
+      "name": "no overflow home 390 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text home 390 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow tips 390 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text tips 390 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow pc 390 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text pc 390 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow insights 390 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text insights 390 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow about 390 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text about 390 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow home 768 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text home 768 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow tips 768 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text tips 768 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow pc 768 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text pc 768 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow insights 768 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text insights 768 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow about 768 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text about 768 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow home 1440 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text home 1440 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow tips 1440 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text tips 1440 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow pc 1440 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text pc 1440 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow insights 1440 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text insights 1440 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow about 1440 light",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text about 1440 light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow home 390 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text home 390 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow tips 390 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text tips 390 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow pc 390 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text pc 390 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow insights 390 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text insights 390 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow about 390 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "name": "header clears text about 390 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow home 768 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text home 768 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow tips 768 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text tips 768 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow pc 768 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text pc 768 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow insights 768 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text insights 768 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow about 768 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      }
+    },
+    {
+      "name": "header clears text about 768 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 62
+      }
+    },
+    {
+      "name": "no overflow home 1440 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text home 1440 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow tips 1440 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text tips 1440 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow pc 1440 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text pc 1440 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow insights 1440 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text insights 1440 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "no overflow about 1440 dark",
+      "pass": true,
+      "detail": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      }
+    },
+    {
+      "name": "header clears text about 1440 dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "hits": [],
+        "headerHeight": 74
+      }
+    },
+    {
+      "name": "nav pill home light after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Home",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill tips light after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Daily Tech Tips",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill pc light after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "PC Building",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill insights light after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Tech Insights / Learning Hub",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill about light after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "About",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill home light after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Home",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill tips light after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Daily Tech Tips",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill pc light after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "PC Building",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill insights light after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Tech Insights / Learning Hub",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill about light after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "About",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill home dark after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Home",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill tips dark after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Daily Tech Tips",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill pc dark after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "PC Building",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill insights dark after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Tech Insights / Learning Hub",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill about dark after load",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "About",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill home dark after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Home",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill tips dark after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Daily Tech Tips",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill pc dark after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "PC Building",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill insights dark after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Tech Insights / Learning Hub",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "nav pill about dark after transition",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "About",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "header shrinks 1440 light",
+      "pass": true,
+      "detail": {
+        "topSize": {
+          "header": 74,
+          "logo": 48
+        },
+        "compactSize": {
+          "header": 62,
+          "logo": 38.400001525878906,
+          "top": 6
+        }
+      }
+    },
+    {
+      "name": "header hides and returns 1440 light",
+      "pass": true,
+      "detail": {
+        "hidden": -12.800003051757812,
+        "top": 6
+      }
+    },
+    {
+      "name": "header scroll adds no layout shift 1440 light",
+      "pass": true,
+      "detail": {
+        "shiftsBefore": 0,
+        "shiftsAfter": 0
+      }
+    },
+    {
+      "name": "header shrinks 390 light",
+      "pass": true,
+      "detail": {
+        "topSize": {
+          "header": 62,
+          "logo": 36
+        },
+        "compactSize": {
+          "header": 50,
+          "logo": 28.800003051757812,
+          "top": 2
+        }
+      }
+    },
+    {
+      "name": "header hides and returns 390 light",
+      "pass": true,
+      "detail": {
+        "hidden": -12,
+        "top": 2
+      }
+    },
+    {
+      "name": "header scroll adds no layout shift 390 light",
+      "pass": true,
+      "detail": {
+        "shiftsBefore": 0,
+        "shiftsAfter": 0
+      }
+    },
+    {
+      "name": "reduced motion header transition is instant light",
+      "pass": true,
+      "detail": {
+        "header": "0s",
+        "logo": "0s",
+        "settled": true
+      }
+    },
+    {
+      "name": "header shrinks 1440 dark",
+      "pass": true,
+      "detail": {
+        "topSize": {
+          "header": 74,
+          "logo": 48
+        },
+        "compactSize": {
+          "header": 62,
+          "logo": 38.400001525878906,
+          "top": 6
+        }
+      }
+    },
+    {
+      "name": "header hides and returns 1440 dark",
+      "pass": true,
+      "detail": {
+        "hidden": -12.800003051757812,
+        "top": 6
+      }
+    },
+    {
+      "name": "header scroll adds no layout shift 1440 dark",
+      "pass": true,
+      "detail": {
+        "shiftsBefore": 0,
+        "shiftsAfter": 0
+      }
+    },
+    {
+      "name": "header shrinks 390 dark",
+      "pass": true,
+      "detail": {
+        "topSize": {
+          "header": 62,
+          "logo": 36
+        },
+        "compactSize": {
+          "header": 50,
+          "logo": 28.800003051757812,
+          "top": 2
+        }
+      }
+    },
+    {
+      "name": "header hides and returns 390 dark",
+      "pass": true,
+      "detail": {
+        "hidden": -12,
+        "top": 2
+      }
+    },
+    {
+      "name": "header scroll adds no layout shift 390 dark",
+      "pass": true,
+      "detail": {
+        "shiftsBefore": 0,
+        "shiftsAfter": 0
+      }
+    },
+    {
+      "name": "reduced motion header transition is instant dark",
+      "pass": true,
+      "detail": {
+        "header": "0s",
+        "logo": "0s",
+        "settled": true
+      }
+    },
+    {
+      "name": "glyph contrast normal home to about light",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 3.23,
+        "worstLabel": "PC Building",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "pill stays in the bar home to about light",
+      "pass": true,
+      "detail": {
+        "samples": 72,
+        "outside": 0,
+        "misaligned": 0,
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 19,
+        "coveredSamples": 63,
+        "worstRatio": 5.98,
+        "lowContrast": 0
+      }
+    },
+    {
+      "name": "pill rests in the link home to about light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "About",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "glyph contrast normal tips to insights light",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 3.23,
+        "worstLabel": "Daily Tech Tips",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "pill stays in the bar tips to insights light",
+      "pass": true,
+      "detail": {
+        "samples": 67,
+        "outside": 0,
+        "misaligned": 0,
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 18,
+        "coveredSamples": 70,
+        "worstRatio": 5.98,
+        "lowContrast": 0
+      }
+    },
+    {
+      "name": "pill rests in the link tips to insights light",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Tech Insights / Learning Hub",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "glyph contrast normal home to about dark",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 5.73,
+        "worstLabel": "PC Building",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "pill stays in the bar home to about dark",
+      "pass": true,
+      "detail": {
+        "samples": 67,
+        "outside": 0,
+        "misaligned": 0,
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 19,
+        "coveredSamples": 33,
+        "worstRatio": 1.38,
+        "lowContrast": 27
+      }
+    },
+    {
+      "name": "pill rests in the link home to about dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "About",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "glyph contrast normal tips to insights dark",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 5.09,
+        "worstLabel": "PC Building",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 5.09,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "pill stays in the bar tips to insights dark",
+      "pass": true,
+      "detail": {
+        "samples": 70,
+        "outside": 0,
+        "misaligned": 0,
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 18,
+        "coveredSamples": 73,
+        "worstRatio": 1.38,
+        "lowContrast": 67
+      }
+    },
+    {
+      "name": "pill rests in the link tips to insights dark",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "inside": true,
+        "ratio": 13.44,
+        "label": "Tech Insights / Learning Hub",
+        "color": "rgb(24, 24, 27)",
+        "fill": "rgb(253, 224, 71)"
+      }
+    },
+    {
+      "name": "glyph contrast 0.04 home to about light",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 3.2,
+        "worstLabel": "Daily Tech Tips",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 3.2,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "slow pill stays behind labels home to about light",
+      "pass": true,
+      "detail": {
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 315,
+        "coveredSamples": 420,
+        "worstRatio": 5.98,
+        "lowContrast": 0,
+        "xs": [
+          578,
+          755,
+          834
+        ]
+      }
+    },
+    {
+      "name": "glyph contrast 0.04 tips to insights light",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 3.23,
+        "worstLabel": "Daily Tech Tips",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 3.25,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 3.23,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "slow pill stays behind labels tips to insights light",
+      "pass": true,
+      "detail": {
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 211,
+        "coveredSamples": 722,
+        "worstRatio": 5.98,
+        "lowContrast": 0,
+        "xs": [
+          529,
+          607,
+          642
+        ]
+      }
+    },
+    {
+      "name": "glyph contrast 0.04 home to about dark",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 5.09,
+        "worstLabel": "Tech Insights / Learning Hub",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 5.09,
+            "worstLabel": "Tech Insights / Learning Hub",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 5.72,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "slow pill stays behind labels home to about dark",
+      "pass": true,
+      "detail": {
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 315,
+        "coveredSamples": 425,
+        "worstRatio": 1.38,
+        "lowContrast": 297,
+        "xs": [
+          578,
+          753,
+          833
+        ]
+      }
+    },
+    {
+      "name": "glyph contrast 0.04 tips to insights dark",
+      "pass": true,
+      "detail": {
+        "count": 168,
+        "fails": 0,
+        "worstRatio": 5.09,
+        "worstLabel": "PC Building",
+        "worstChar": "i",
+        "frames": [
+          {
+            "pct": 25,
+            "count": 56,
+            "worstRatio": 5.09,
+            "worstLabel": "PC Building",
+            "worstChar": "i"
+          },
+          {
+            "pct": 50,
+            "count": 56,
+            "worstRatio": 5.73,
+            "worstLabel": "Daily Tech Tips",
+            "worstChar": "i"
+          },
+          {
+            "pct": 75,
+            "count": 56,
+            "worstRatio": 5.09,
+            "worstLabel": "Tech Insights / Learning Hub",
+            "worstChar": "i"
+          }
+        ]
+      }
+    },
+    {
+      "name": "slow pill stays behind labels tips to insights dark",
+      "pass": true,
+      "detail": {
+        "darkWithoutCover": 0,
+        "coveredLabel": 0,
+        "distinctX": 211,
+        "coveredSamples": 747,
+        "worstRatio": 1.38,
+        "lowContrast": 619,
+        "xs": [
+          529,
+          605,
+          641
+        ]
+      }
+    },
+    {
+      "name": "nav label once home light",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
         }
       }
     },
     {
       "name": "screenshot home-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/home-1440-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-1440-light.png"
     },
     {
-      "name": "screenshot home-390-light.png",
+      "name": "screenshot header-home-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/home-390-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-home-1440-light.png"
     },
     {
-      "name": "screenshot home-1440-dark.png",
+      "name": "screenshot home-1440-light-full.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/home-1440-dark.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-1440-light-full.png"
     },
     {
-      "name": "screenshot home-390-dark.png",
+      "name": "nav label once tips light",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/home-390-dark.png"
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
     },
     {
       "name": "screenshot tips-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/tips-1440-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-1440-light.png"
     },
     {
-      "name": "screenshot tips-390-light.png",
+      "name": "screenshot header-tips-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/tips-390-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-tips-1440-light.png"
     },
     {
-      "name": "screenshot tips-1440-dark.png",
+      "name": "screenshot tips-1440-light-full.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/tips-1440-dark.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-1440-light-full.png"
     },
     {
-      "name": "screenshot tips-390-dark.png",
+      "name": "nav label once pc light",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/tips-390-dark.png"
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
     },
     {
       "name": "screenshot pc-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/pc-1440-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-1440-light.png"
     },
     {
-      "name": "screenshot pc-390-light.png",
+      "name": "screenshot header-pc-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/pc-390-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-pc-1440-light.png"
     },
     {
-      "name": "screenshot pc-1440-dark.png",
+      "name": "screenshot pc-1440-light-full.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/pc-1440-dark.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-1440-light-full.png"
     },
     {
-      "name": "screenshot pc-390-dark.png",
+      "name": "nav label once insights light",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/pc-390-dark.png"
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
     },
     {
       "name": "screenshot insights-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/insights-1440-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-1440-light.png"
     },
     {
-      "name": "screenshot insights-390-light.png",
+      "name": "screenshot header-insights-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/insights-390-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-insights-1440-light.png"
     },
     {
-      "name": "screenshot insights-1440-dark.png",
+      "name": "screenshot insights-1440-light-full.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/insights-1440-dark.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-1440-light-full.png"
     },
     {
-      "name": "screenshot insights-390-dark.png",
+      "name": "nav label once about light",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/insights-390-dark.png"
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
     },
     {
       "name": "screenshot about-1440-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/about-1440-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-1440-light.png"
+    },
+    {
+      "name": "screenshot header-about-1440-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-about-1440-light.png"
+    },
+    {
+      "name": "screenshot about-1440-light-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-1440-light-full.png"
+    },
+    {
+      "name": "screenshot home-768-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-768-light.png"
+    },
+    {
+      "name": "screenshot tips-768-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-768-light.png"
+    },
+    {
+      "name": "screenshot pc-768-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-768-light.png"
+    },
+    {
+      "name": "screenshot insights-768-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-768-light.png"
+    },
+    {
+      "name": "screenshot about-768-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-768-light.png"
+    },
+    {
+      "name": "screenshot home-390-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-390-light.png"
+    },
+    {
+      "name": "screenshot home-390-light-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-390-light-full.png"
+    },
+    {
+      "name": "screenshot tips-390-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-390-light.png"
+    },
+    {
+      "name": "screenshot tips-390-light-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-390-light-full.png"
+    },
+    {
+      "name": "screenshot pc-390-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-390-light.png"
+    },
+    {
+      "name": "screenshot pc-390-light-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-390-light-full.png"
+    },
+    {
+      "name": "screenshot insights-390-light.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-390-light.png"
+    },
+    {
+      "name": "screenshot insights-390-light-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-390-light-full.png"
     },
     {
       "name": "screenshot about-390-light.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/about-390-light.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-390-light.png"
+    },
+    {
+      "name": "screenshot about-390-light-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-390-light-full.png"
+    },
+    {
+      "name": "nav label once home dark",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
+    },
+    {
+      "name": "screenshot home-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-1440-dark.png"
+    },
+    {
+      "name": "screenshot header-home-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-home-1440-dark.png"
+    },
+    {
+      "name": "screenshot home-1440-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-1440-dark-full.png"
+    },
+    {
+      "name": "nav label once tips dark",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
+    },
+    {
+      "name": "screenshot tips-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-1440-dark.png"
+    },
+    {
+      "name": "screenshot header-tips-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-tips-1440-dark.png"
+    },
+    {
+      "name": "screenshot tips-1440-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-1440-dark-full.png"
+    },
+    {
+      "name": "nav label once pc dark",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
+    },
+    {
+      "name": "screenshot pc-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-1440-dark.png"
+    },
+    {
+      "name": "screenshot header-pc-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-pc-1440-dark.png"
+    },
+    {
+      "name": "screenshot pc-1440-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-1440-dark-full.png"
+    },
+    {
+      "name": "nav label once insights dark",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
+    },
+    {
+      "name": "screenshot insights-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-1440-dark.png"
+    },
+    {
+      "name": "screenshot header-insights-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-insights-1440-dark.png"
+    },
+    {
+      "name": "screenshot insights-1440-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-1440-dark-full.png"
+    },
+    {
+      "name": "nav label once about dark",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        },
+        "tabCounts": {
+          "Home": 1,
+          "Daily Tech Tips": 1,
+          "PC Building": 1,
+          "Tech Insights / Learning Hub": 1,
+          "About": 1
+        }
+      }
     },
     {
       "name": "screenshot about-1440-dark.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/about-1440-dark.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-1440-dark.png"
+    },
+    {
+      "name": "screenshot header-about-1440-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/header-about-1440-dark.png"
+    },
+    {
+      "name": "screenshot about-1440-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-1440-dark-full.png"
+    },
+    {
+      "name": "screenshot home-768-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-768-dark.png"
+    },
+    {
+      "name": "screenshot tips-768-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-768-dark.png"
+    },
+    {
+      "name": "screenshot pc-768-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-768-dark.png"
+    },
+    {
+      "name": "screenshot insights-768-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-768-dark.png"
+    },
+    {
+      "name": "screenshot about-768-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-768-dark.png"
+    },
+    {
+      "name": "screenshot home-390-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-390-dark.png"
+    },
+    {
+      "name": "screenshot home-390-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/home-390-dark-full.png"
+    },
+    {
+      "name": "screenshot tips-390-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-390-dark.png"
+    },
+    {
+      "name": "screenshot tips-390-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/tips-390-dark-full.png"
+    },
+    {
+      "name": "screenshot pc-390-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-390-dark.png"
+    },
+    {
+      "name": "screenshot pc-390-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/pc-390-dark-full.png"
+    },
+    {
+      "name": "screenshot insights-390-dark.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-390-dark.png"
+    },
+    {
+      "name": "screenshot insights-390-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/insights-390-dark-full.png"
     },
     {
       "name": "screenshot about-390-dark.png",
       "pass": true,
-      "detail": "/agent/repos/tmp-3185f49920692193/screenshots/about-390-dark.png"
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-390-dark.png"
+    },
+    {
+      "name": "screenshot about-390-dark-full.png",
+      "pass": true,
+      "detail": "/workspace/sites/daily-dose-of-tech-v3/screenshots/about-390-dark-full.png"
+    },
+    {
+      "name": "tip entry shows in list, filter, and search",
+      "pass": true,
+      "detail": {
+        "expanded": "true"
+      }
+    },
+    {
+      "name": "tip entry shows in the palette",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "step entry shows in the tracker and persists",
+      "pass": true,
+      "detail": {
+        "persisted": true
+      }
+    },
+    {
+      "name": "step entry shows in the palette",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "blocked storage still lets the tracker work",
+      "pass": true,
+      "detail": {
+        "stepVisible": true,
+        "toggled": true
+      }
+    },
+    {
+      "name": "insight entry shows in the switch and palette",
+      "pass": true,
+      "detail": {
+        "hardwareHidden": true,
+        "softwareShown": true
+      }
     }
   ]
 }

@@ -28,7 +28,7 @@ const pages: { id: PageId; file: string }[] = [
 
 const banned: { name: string; pattern: RegExp }[] = [
   { name: "CompTIA", pattern: /comptia/i },
-  { name: "A+", pattern: /\bA\+/ },
+  { name: "A+", pattern: /(?<![\w.])A\+(?![\w+])/ },
   { name: "exam-prep", pattern: /exam[-\s]?prep/i },
   { name: "exam preparation", pattern: /exam preparation/i },
   { name: "Sunshine Bay", pattern: /sunshine bay/i },

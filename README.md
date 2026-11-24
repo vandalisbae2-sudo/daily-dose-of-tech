@@ -2,6 +2,8 @@
 
 A static site for Daily Dose of Tech. It is a bright, small learning hub with pages for daily tips, PC building, and tech insights. Martin supplies the tips, build steps, and insights. Those lists ship empty until then.
 
+v3 keeps that structure and adds a full-bleed home, a pinned story, a bento grid, designed empty scenes, and smooth scrolling. Smooth scrolling uses `lenis` and turns off when reduced motion is requested.
+
 Live URL (placeholder, not yet published): `https://<owner>.github.io/daily-dose-of-tech/`
 
 There is no custom domain and no CNAME. GitHub Pages will serve the site from the `/daily-dose-of-tech/` project path once the repository is published and Pages is turned on.
